@@ -1,0 +1,24 @@
+* Z:\home\alumno\Desktop\modelo_1_1.asc
+Q1 N007 N008 0 0 2N2222
+Q2 N008 N008 0 0 2N2222
+Q3 N004 verr N007 0 2N2222
+Q4 N001 N005 N007 0 2N2222
+Q5 N003 N004 vout 0 BC547B
+Q7 N004 N002 N001 0 BC557B
+Q8 N002 N002 N001 0 BC557B
+R1 N001 N008 2650
+R2 N002 0 5300
+Q9 vout N003 N001 0 BC557B
+V1 N005 0 3.3
+V2 N001 0 6.25
+Q6 N001 vout N006 0 BC547B
+R4 N006 verr 1000
+I1 vout 0 1
+R3 verr 0 3300
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\alumno\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+;op
+.dc I1 0.01 1 0.001
+.backanno
+.end
