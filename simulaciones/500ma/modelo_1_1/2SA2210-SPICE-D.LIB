@@ -1,0 +1,23 @@
+************************** 2SA2210 SPICE PARAMETER ***************************
+*.LIB 2SA2210                                                                 
+* DATE : 2014/08/01                                                           
+* Temp = 27 deg                                                               
+*                                                                             
+.MODEL 2SA2210 pnp (       IS       = 6.000p         BF       = 130           
++NF       = 1              VAF      = 1.6            IKF      = 30            
++ISE      = 22.00p         NE       = 2              BR       = 170           
++NR       = 1              VAR      = 50             IKR      = 4             
++ISC      = 300.0p         NC       = 2              RB       = 600.0m        
++IRB      = 500.0m         RBM      = 21.00m         RE       = 17.00m        
++RC       = 1.000m         XTB      = 1.5            EG       = 1.11          
++XTI      = 3              CJE      = 3.000n         VJE      = 700.0m        
++MJE      = 500.0m         TF       = 950p           XTF      = 10            
++VTF      = 12             ITF      = 5              PTF      = 0             
++CJC      = 760.0p         VJC      = 550.0m         MJC      = 400.0m        
++XCJC     = 1              TR       = 1.000n         FC       = 500.0m        
++KF       = 0              AF       = 1              )                        
+*                                                                             
+*.ENDL 2SA2210                                                                
+*  Information herein is for example only;                                    
+*  it is not guaranteed for volume production.                                
+* ON Semiconductor                      
