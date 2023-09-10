@@ -1,0 +1,22 @@
+************************* 2SC6082 SPICE PARAMETER****************************
+*.LIB 2SC6082                                                                 
+* DATE : 2011/07/20                                                           
+* Temp = 27 deg                                                               
+.MODEL 2SC6082 npn (       IS       = 5.200p         BF       = 340           
++NF       = 1              VAF      = 2.8            IKF      = 8             
++ISE      = 180.0p         NE       = 2              BR       = 155           
++NR       = 1              VAR      = 28             IKR      = 6             
++ISC      = 40.00p         NC       = 2              RB       =  750.0m       
++IRB      = 300.0m         RBM      = 5.000m         RE       = 16.50m        
++RC       = 3.500m         XTB      = 1              EG       = 1.11          
++XTI      = 3              CJE      = 1.390n         VJE      = 680.0m        
++MJE      = 357.0m         TF       = 750p           XTF      = 5             
++VTF      =  1.000K        ITF      = 6              PTF      = 0             
++CJC      = 275.0p         VJC      = 550.0m         MJC      = 394.0m        
++XCJC     = 1              TR       =  1.000n        FC       = 500.0m        
++KF       = 0              AF       = 1              )                        
+*                                                                             
+*.ENDL 2SC6082                                                                
+*  Information herein is for example only;                                    
+*  it is not guaranteed for volume production.                                
+* ON Semiconductor  Hyper Device Division.                                    
