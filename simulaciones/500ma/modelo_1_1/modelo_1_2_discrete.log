@@ -1,0 +1,54 @@
+Circuit: * C:\users\alumno\Desktop\DCE\simulaciones\500ma\modelo_1_1\modelo_1_2_discrete.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+R5: both pins shorted together -- ignoring.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+Gmin = 0.000275318
+vernier = 0.25
+vernier = 0.333333
+Gmin = 0.000166071
+vernier = 0.444444
+vernier = 0.592592
+Gmin = 5.70465e-005
+vernier = 0.790123
+Gmin = 1.11306e-005
+vernier = 1
+Gmin = 1.19514e-006
+Gmin = 1.28327e-007
+Gmin = 1.3779e-008
+Gmin = 1.47951e-009
+Gmin = 1.58861e-010
+Gmin = 1.70576e-011
+Gmin = 1.83154e-012
+Gmin = 1.9666e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Sun Sep 10 23:44:38 2023
+Total elapsed time: 0.158 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2837
+traniter = 2102
+tranpoints = 1052
+accept = 1052
+rejected = 0
+matrix size = 73
+fillins = 50
+solver = Normal
+Matrix Compiler1: 8.95 KB object code size  1.4/0.6/[0.6]
+Matrix Compiler2: 7.61 KB object code size  0.6/0.7/[0.6]
+
