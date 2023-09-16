@@ -4,7 +4,11 @@ Warning: Multiple definitions of model "2scr375p" Type: BJT
 Warning: Multiple definitions of model "bc857b" Type: BJT
 Warning: Multiple definitions of model "bc847c" Type: BJT
 Warning: Multiple definitions of model "bc847b" Type: BJT
-i2: both pins shorted together -- ignoring.
+WARNING: Less than two connections to node nc_01.  This node is used by r14.
+WARNING: Less than two connections to node nc_02.  This node is used by r16.
+WARNING: Less than two connections to node nc_04.  This node is used by r21.
+WARNING: Less than two connections to node nc_05.  This node is used by r24.
+WARNING: Less than two connections to node nc_06.  This node is used by r6.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -14,14 +18,19 @@ Gmin = 0.0123794
 Gmin = 0.00132923
 Gmin = 0.000142725
 Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
+vernier = 0.5
+vernier = 0.666667
+Gmin = 5.73799e-06
+vernier = 0.888888
+vernier = 1
+Gmin = 8.09366e-07
+Gmin = 8.6905e-08
+Gmin = 9.33136e-09
+Gmin = 1.00195e-09
+Gmin = 1.07583e-10
+Gmin = 1.15517e-11
+Gmin = 1.24035e-12
+Gmin = 1.33182e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
@@ -29,71 +38,71 @@ Semiconductor Device Operating Points:
                         --- Bipolar Transistors ---
 Name:       q1          q2          q3          q4          q10
 Model:    2n2222      2n2222      2n2222      2n2222      2n2222
-Ib:       2.01e-05    2.01e-05   -1.15e-12    1.90e-05    1.23e-05
-Ic:       3.96e-03    3.97e-03    6.38e-13    3.94e-03    2.44e-03
-Vbe:      6.92e-01    6.92e-01   -5.09e-01    6.91e-01    6.79e-01
-Vbc:      1.83e-01    0.00e+00   -6.35e-01   -4.80e+00    6.85e-02
-Vce:      5.09e-01    6.92e-01    1.26e-01    5.49e+00    6.11e-01
-BetaDC:   1.97e+02    1.97e+02   -5.56e-01    2.07e+02    1.98e+02
-Gm:       1.51e-01    1.51e-01    1.08e-21    1.50e-01    9.36e-02
-Rpi:      1.29e+03    1.29e+03    1.00e+12    1.36e+03    2.10e+03
+Ib:       2.14e-05    2.14e-05   -1.20e-12    2.02e-05   -2.10e-13
+Ic:       4.22e-03    4.23e-03    6.90e-13    4.20e-03    0.00e+00
+Vbe:      6.94e-01    6.94e-01   -5.08e-01    6.92e-01   -2.03e-01
+Vbc:      1.86e-01    0.00e+00   -6.86e-01   -5.15e+00   -6.91e-03
+Vce:      5.08e-01    6.94e-01    1.79e-01    5.84e+00   -1.96e-01
+BetaDC:   1.97e+02    1.97e+02   -5.76e-01    2.08e+02   -0.00e+00
+Gm:       1.61e-01    1.61e-01    1.16e-21    1.60e-01   -2.96e-13
+Rpi:      1.21e+03    1.21e+03    1.00e+12    1.28e+03    1.00e+12
 Rx:       1.00e+01    1.00e+01    1.00e+01    1.00e+01    1.00e+01
-Ro:       2.52e+04    2.52e+04    1.14e+23    2.66e+04    4.10e+04
-Cbe:      1.01e-10    1.01e-10    2.11e-11    1.00e-10    7.73e-11
-Cbc:      8.78e-12    8.00e-12    6.53e-12    4.13e-12    8.26e-12
+Ro:       2.37e+04    2.37e+04    6.84e+23    2.50e+04    3.38e+12
+Cbe:      1.05e-10    1.05e-10    2.11e-11    1.04e-10    2.31e-11
+Cbc:      8.80e-12    8.00e-12    6.46e-12    4.05e-12    7.98e-12
 Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-BetaAC:   1.94e+02    1.95e+02    1.08e-09    2.04e+02    1.97e+02
+BetaAC:   1.94e+02    1.94e+02    1.16e-09    2.05e+02   -2.96e-01
 Cbx:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Ft:       2.20e+08    2.22e+08    5.77e-03    2.29e+08    1.74e+08
+Ft:       2.26e+08    2.28e+08    5.78e-03    2.35e+08    4.89e-03
 
-Name:       q5          q6          q7          q8          q9
-Model:    bc547b      bc547b      bc557b      bc557b      2sa2210
-Ib:       1.25e-06   -6.06e-12   -6.19e-06   -6.25e-06   -3.80e-04
-Ic:       3.80e-04    6.09e-12   -2.44e-03   -2.01e-03   -2.14e-01
-Vbe:      6.11e-01    2.14e-03   -6.46e-01   -6.46e-01   -5.94e-01
-Vbc:     -4.77e+00   -6.00e+00    4.72e+00    0.00e+00    5.38e+00
-Vce:      5.38e+00    6.00e+00   -5.37e+00   -6.46e-01   -5.98e+00
-BetaDC:   3.05e+02   -1.01e+00    3.95e+02    3.21e+02    5.62e+02
-Gm:       1.45e-02    1.09e-12    9.12e-02    7.50e-02    8.22e+00
-Rpi:      2.10e+04    9.11e+11    4.25e+03    4.21e+03    6.82e+01
-Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    5.99e-01
-Ro:       1.75e+05    2.44e+15    1.04e+04    1.03e+04    3.26e+01
-Cbe:      4.06e-11    1.36e-11    8.49e-11    7.59e-11    1.36e-08
-Cbc:      1.08e-12    1.02e-12    1.72e-12    6.82e-12    2.94e-10
+Name:       q13         q5          q7          q8          q9
+Model:    2n2222      2n2222      bc557b      bc557b      2sa2210
+Ib:       3.36e-06    1.32e-05   -6.59e-06   -6.66e-06   -7.04e-04
+Ic:       7.04e-04    2.62e-03   -2.63e-03   -2.14e-03   -4.13e-01
+Vbe:      6.45e-01    6.81e-01   -6.48e-01   -6.48e-01   -6.14e-01
+Vbc:     -5.05e+00    2.08e-02    5.02e+00    0.00e+00    5.69e+00
+Vce:      5.69e+00    6.60e-01   -5.66e+00   -6.48e-01   -6.31e+00
+BetaDC:   2.10e+02    1.98e+02    3.99e+02    3.21e+02    5.87e+02
+Gm:       2.71e-02    1.01e-01    9.80e-02    7.97e-02    1.59e+01
+Rpi:      7.71e+03    1.95e+03    3.99e+03    3.94e+03    3.68e+01
+Rx:       1.00e+01    1.00e+01    1.00e+00    1.00e+00    5.98e-01
+Ro:       1.49e+05    3.81e+04    9.78e+03    9.67e+03    1.76e+01
+Cbe:      4.97e-11    8.01e-11    8.89e-11    7.87e-11    2.10e-08
+Cbc:      4.07e-12    8.08e-12    1.68e-12    6.82e-12    2.88e-10
 Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-BetaAC:   3.05e+02    9.92e-01    3.88e+02    3.15e+02    5.60e+02
-Cbx:      6.66e-13    6.25e-13    1.02e-12    4.03e-12    0.00e+00
-Ft:       5.46e+07    1.49e-03    1.66e+08    1.38e+08    9.45e+07
+BetaAC:   2.09e+02    1.96e+02    3.91e+02    3.14e+02    5.84e+02
+Cbx:      0.00e+00    0.00e+00    9.94e-13    4.03e-12    0.00e+00
+Ft:       8.03e+07    1.81e+08    1.70e+08    1.42e+08    1.18e+08
 
                         --- VDMOSFET Transistors ---
 Name:          m2
-Model:     bsc100n03ls
-Id:          2.98e-09
-Vgs:         5.45e+00
-Vds:         2.54e-11
-Vth:         2.77e+00
-Gm:          1.02e-09
-Gds:         2.98e+02
-Cgs:         9.80e-10
-Cgd:         2.40e-10
-Cbody:       1.19e-09
+Model:        bs170
+Id:          2.76e-09
+Vgs:         5.77e+00
+Vds:         1.39e-08
+Vth:         1.82e+00
+Gm:          6.93e-10
+Gds:         4.87e-01
+Cgs:         2.80e-11
+Cgd:         2.00e-11
+Cbody:       3.50e-11
 
 
 
-Date: Thu Sep 14 22:47:06 2023
-Total elapsed time: 10.830 seconds.
+Date: Fri Sep 15 21:11:10 2023
+Total elapsed time: 25.459 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 17
+totiter = 34
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 65
+matrix size = 85
 fillins = 59
 solver = Normal
 Avg thread counts: 8.0/0.0/8.0/8.0
-Matrix Compiler1: 7.69 KB object code size
-Matrix Compiler2: 6.92 KB object code size
+Matrix Compiler1: 8.62 KB object code size
+Matrix Compiler2:     661 opcodes
