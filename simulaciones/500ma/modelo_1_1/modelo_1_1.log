@@ -4,31 +4,57 @@ Warning: Multiple definitions of model "2scr375p" Type: BJT
 Warning: Multiple definitions of model "bc857b" Type: BJT
 Warning: Multiple definitions of model "bc847c" Type: BJT
 Warning: Multiple definitions of model "bc847b" Type: BJT
-WARNING: Node N005 is floating.
-
 WARNING: Less than two connections to node nc_01.  This node is used by r14.
 WARNING: Less than two connections to node nc_02.  This node is used by r16.
 WARNING: Less than two connections to node nc_04.  This node is used by r21.
 WARNING: Less than two connections to node nc_05.  This node is used by r24.
 WARNING: Less than two connections to node nc_06.  This node is used by r6.
-WARNING: Less than two connections to node n005.  This node is used by l1.
-Direct Newton iteration for .op point succeeded.
+WARNING: Less than two connections to node nc_08.  This node is used by v4.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+vernier = 0.5
+vernier = 0.25
+vernier = 0.333333
+Gmin = 1.20543e-05
+vernier = 0.444444
+Gmin = 4.65101e-06
+vernier = 0.592592
+vernier = 0.790123
+Gmin = 9.87218e-07
+vernier = 1
+Gmin = 1.15494e-07
+Gmin = 1.24011e-08
+Gmin = 1.33156e-09
+Gmin = 1.42975e-10
+Gmin = 1.53518e-11
+Gmin = 1.64839e-12
+Gmin = 1.76994e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
 
-Date: Fri Sep 22 21:30:43 2023
-Total elapsed time: 0.398 seconds.
+
+Date: Fri Sep 22 21:49:02 2023
+Total elapsed time: 0.559 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 10968
-traniter = 10940
-tranpoints = 4838
-accept = 4037
-rejected = 801
-matrix size = 91
-fillins = 56
+method = trap
+totiter = 720
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 90
+fillins = 96
 solver = Normal
-Avg thread counts: 1.4/1.8/1.8/1.4
-Matrix Compiler1: 8.66 KB object code size  3.4/2.3/[1.7]
-Matrix Compiler2: 8.82 KB object code size  1.8/2.0/[1.1]
+Avg thread counts: 6.4/0.0/12.0/1.4
+Matrix Compiler1:     615 opcodes
+Matrix Compiler2: 9.47 KB object code size  1.2/1.7/[1.0]
 
