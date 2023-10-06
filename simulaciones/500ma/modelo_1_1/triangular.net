@@ -1,0 +1,12 @@
+* C:\Users\aldum\OneDrive\Escritorio\FIUBA\Diseño de Circuitos Electrónicos\Proyecto\DCE\simulaciones\500ma\modelo_1_1\triangular.asc
+V3 N001 0 1.2
+R2 N001 N004 1k
+R3 N004 0 3k3
+R4 N004 N003 100k
+XU2 N002 N004 N003 opamp Aol=100K GBW=10Meg
+V4 N002 0 PULSE(0 5 0 500u 500u 1p 1m 100k)
+R5 N003 0 1k
+.tran 20m
+.inc opamp.sub
+.backanno
+.end
