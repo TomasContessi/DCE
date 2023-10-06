@@ -1,26 +1,69 @@
-Circuit: * C:\Users\aldum\OneDrive\Escritorio\FIUBA\Diseño de Circuitos Electrónicos\Proyecto\DCE\simulaciones\500ma\modelo_1_1\triangular.asc
+Circuit: * C:\Users\lucas\Desktop\FIUBA\DCE\DCE\simulaciones\500ma\modelo_1_1\triangular.asc
 
-Direct Newton iteration for .op point succeeded.
-Ignoring empty pin current: Ix(u2:1)
-Ignoring empty pin current: Ix(u2:2)
-Ignoring empty pin current: Ix(u2:1)
-Ignoring empty pin current: Ix(u2:2)
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v2.  Increasing period to 0.002001
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+Gmin = 0.000278759
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0208333
+Gmin = 0.000271962
+vernier = 0.0277778
+Gmin = 0.000255976
+vernier = 0.037037
+vernier = 0.0493827
+Gmin = 0.000231841
+vernier = 0.0658435
+vernier = 0.0877914
+Gmin = 0.000198259
+vernier = 0.117055
+Gmin = 0.000153977
+vernier = 0.156073
+vernier = 0.208098
+Gmin = 0.00010212
+vernier = 0.277464
+vernier = 0.369952
+Gmin = 5.36857e-005
+vernier = 0.493269
+Gmin = 1.9287e-005
+vernier = 0.657691
+vernier = 0.876922
+Gmin = 3.80049e-006
+vernier = 1
+Gmin = 4.39756e-007
+Gmin = 4.72185e-008
+Gmin = 5.07005e-009
+Gmin = 5.44392e-010
+Gmin = 5.84537e-011
+Gmin = 6.27641e-012
+Gmin = 6.73925e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
 
-Date: Thu Oct  5 21:48:43 2023
-Total elapsed time: 0.273 seconds.
+
+Date: Fri Oct 06 00:41:07 2023
+Total elapsed time: 0.224 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 4799
-traniter = 4796
-tranpoints = 2399
-accept = 2349
-rejected = 50
-matrix size = 6
-fillins = 1
+totiter = 11094
+traniter = 9874
+tranpoints = 2952
+accept = 2374
+rejected = 578
+matrix size = 28
+fillins = 4
 solver = Normal
-Avg thread counts: 1.8/2.6/2.7/1.8
-Matrix Compiler1:      11 opcodes  0.3/[0.3]/0.3
-Matrix Compiler2: 354 bytes object code size  0.2/0.3/[0.2]
+Matrix Compiler1: 1.51 KB object code size  0.3/0.1/[0.1]
+Matrix Compiler2: 2.36 KB object code size  0.2/0.2/[0.1]
 
