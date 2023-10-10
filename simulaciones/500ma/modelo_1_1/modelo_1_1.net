@@ -109,14 +109,14 @@ XU13 N015 N014 Vref2 0 Vout_ovlo level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25
 .model PMOS PMOS
 .lib C:\Users\aldum\AppData\Local\LTspice\lib\cmp\standard.mos
 ;op
-;tran 2m
+.tran 20m
 ;dc V2 6.15 6.55 0.1
 .lib 2SA2210-SPICE-D.LIB
 ;step param Rl 0.00001 10 0.1
 .model BS170 VDMOS VTO=1.824 RG=270 RS=1.572 RD=1.436 RB=.768 KP=.1233 Cgdmax=20p Cgdmin=3p CGS=28p Cjo=35p Rds=1.2E8 IS=5p Bv=60 Ibv=10u Tt=161.6n
 * LDOA
 * LDOB
-.ac dec 1000 10 100meg
+;ac dec 1000 10 100meg
 ;tran 0 10m 0
 * Pulsador Normal Cerrado
 .lib UniversalOpAmp1.lib
