@@ -1,8 +1,8 @@
 * C:\Users\aldum\OneDrive\Escritorio\FIUBA\Diseño de Circuitos Electrónicos\Proyecto\DCE\simulaciones\500ma\modelo_1_1\modelo_1_1.asc
-Q1 N008 N009 0 0 2N2222
+Q1 N007 N009 0 0 2N2222
 Q2 N009 N009 0 0 2N2222
-Q3 Tpaso Verr N008 0 2N2222
-Q4 VCC Vref N008 0 2N2222
+Q3 Tpaso Verr N007 0 2N2222
+Q4 VCC Vref N007 0 2N2222
 Q7 Tpaso N004 VCC 0 BC557B
 Q8 N004 N004 VCC 0 BC557B
 R1 VCC N009 1325
@@ -10,8 +10,8 @@ R2 N004 0 2650
 Q9 NodoS1 N005 VCC 0 2SA2210
 V1 Vref 0 1.2
 V2 VCC 0 6.35
-R4 vout Verr 5k6
-R3 Verr N010 1k8
+R4 vout N008 5k6
+R3 N008 N010 1k8
 R5 N010 0 1k5
 R8 N011 0 10k
 M2 N010 N011 0 0 BS170
@@ -43,7 +43,7 @@ R24 NC_05 N045 560k
 Rs NodoS1 vout 0.1
 Rl vout 0 100
 R6 NC_06 P001 10
-Q13 N005 N006 NodoS1 0 2N2222
+Q13 N005 Tpaso NodoS1 0 2N2222
 Q5 P002 N034 0 0 2N2222
 R25 N020 N034 100
 XU6 N022 N021 VCC 0 N020 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
@@ -69,17 +69,17 @@ XU10 N044 N040 VCC 0 N040 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0
 R41 N044 0 470k
 R42 Verr N044 560k
 R43 Tpaso P002 10
-L1 Tpaso N006 1Meg
-C3 P003 N006 1Meg
+L1 Verr N008 1Meg
+C3 P003 Verr 1Meg
 V3 P003 0 AC 1
 C4 vout 0 1µ
-C5 0 N006 100n
+C5 0 Tpaso 100n
 V4 NC_08 0 PULSE(0 6 0 1n 1n 1m 2m 1k)
 XU11 N002 Verr Vref2 0 out level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 R44 N002 Vref2 1k
 R45 out N002 10k
-D2 N007 0 QTLP690C
-R46 out N007 470
+D2 N006 0 QTLP690C
+R46 out N006 470
 V5 tri 0 PULSE(0.8 1.6 0 1m 1m 1u 2m 5k)
 XU12 N012 tri Vref2 0 N013 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 R47 N012 Vref2 3k3
@@ -109,14 +109,14 @@ XU13 N015 N014 Vref2 0 Vout_ovlo level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25
 .model PMOS PMOS
 .lib C:\Users\aldum\AppData\Local\LTspice\lib\cmp\standard.mos
 ;op
-.tran 20m
+;tran 20m
 ;dc V2 6.15 6.55 0.1
 .lib 2SA2210-SPICE-D.LIB
 ;step param Rl 0.00001 10 0.1
 .model BS170 VDMOS VTO=1.824 RG=270 RS=1.572 RD=1.436 RB=.768 KP=.1233 Cgdmax=20p Cgdmin=3p CGS=28p Cjo=35p Rds=1.2E8 IS=5p Bv=60 Ibv=10u Tt=161.6n
 * LDOA
 * LDOB
-;ac dec 1000 10 100meg
+.ac dec 1000 10 100meg
 ;tran 0 10m 0
 * Pulsador Normal Cerrado
 .lib UniversalOpAmp1.lib

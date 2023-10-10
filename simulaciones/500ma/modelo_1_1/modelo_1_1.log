@@ -1,0 +1,63 @@
+Circuit: * C:\Users\aldum\OneDrive\Escritorio\FIUBA\Diseño de Circuitos Electrónicos\Proyecto\DCE\simulaciones\500ma\modelo_1_1\modelo_1_1.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v5.  Increasing period to 0.002001
+WARNING: Less than two connections to node nc_01.  This node is used by r14.
+WARNING: Less than two connections to node nc_02.  This node is used by r16.
+WARNING: Less than two connections to node nc_04.  This node is used by r21.
+WARNING: Less than two connections to node nc_05.  This node is used by r24.
+WARNING: Less than two connections to node nc_06.  This node is used by r6.
+WARNING: Less than two connections to node nc_08.  This node is used by v4.
+WARNING: Less than two connections to node nc_09.  This node is used by m3.
+WARNING: Less than two connections to node q.  This node is used by a1.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.25
+vernier = 0.333333
+Gmin = 0.000103628
+vernier = 0.444444
+vernier = 0.592592
+Gmin = 3.77267e-05
+vernier = 0.790123
+Gmin = 7.67762e-06
+vernier = 1
+Gmin = 8.60498e-07
+Gmin = 9.23953e-08
+Gmin = 9.92087e-09
+Gmin = 1.06525e-09
+Gmin = 1.1438e-10
+Gmin = 1.22814e-11
+Gmin = 1.31871e-12
+Gmin = 1.41595e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Mon Oct  9 21:42:45 2023
+Total elapsed time: 0.403 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 864
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 122
+fillins = 103
+solver = Normal
+Avg thread counts: 5.6/0.0/12.0/1.5
+Matrix Compiler1:     726 opcodes
+Matrix Compiler2: 12.10 KB object code size  1.0/2.1/[0.9]
+
