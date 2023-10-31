@@ -1,0 +1,23 @@
+Circuit: * C:\Users\lucas\Desktop\FIUBA\DCE\DCE\simulaciones\500ma\modelo_1_1\buck_int.asc
+
+WARNING: Less than two connections to node VREF.  This node is used by V3.
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Oct 31 08:59:31 2023
+Total elapsed time: 11.808 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2094461
+traniter = 2094448
+tranpoints = 561156
+accept = 409946
+rejected = 151210
+matrix size = 69
+fillins = 7
+solver = Normal
+Thread vector: 3.5/2.7[3] 1.3/1.5[1] 0.4/0.8[1] 0.1/0.7[1]  2592/500
+Matrix Compiler1: 2.92 KB object code size  0.6/0.2/[0.2]
+Matrix Compiler2: 4.34 KB object code size  0.2/0.3/[0.2]
+
