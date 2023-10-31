@@ -20,7 +20,7 @@ C6 OUT N007 2.2n Rser=100
 R5 N007 0 14.4k
 C7 N001 0 22µ
 R6 N001 N010 10
-Rload OUT 0 2
+Rload OUT 0 50
 V3 VRef 0 6.35
 .model D D
 .lib C:\Users\lucas\Documents\LTspiceXVII\lib\cmp\standard.dio
